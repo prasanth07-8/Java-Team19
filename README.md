@@ -4,10 +4,13 @@ Backend implementation for the Campus Resource Management System using Spring Bo
 
 ## Features
 
-- **User Management**: Admin, Staff, Student roles.
+- **User Management**: 
+    - **Admin**: Full access to manage users and resources. Can view all bookings.
+    - **Staff**: Can view resources and make bookings within allocated timings.
+    - **Student**: Can view resources and make bookings within allocated timings.
 - **Resources**: Labs, Classrooms, Halls, Equipment.
 - **Booking System**: Request, Approve, Cancel bookings.
-- **Security**: JWT based authentication.
+- **Security**: JWT based authentication with Role-Based Access Control (RBAC).
 - **Audit Logging**: Track all actions.
 - **Notifications**: Email notifications (mocked).
 
@@ -26,6 +29,13 @@ Backend implementation for the Campus Resource Management System using Spring Bo
    mvn spring-boot:run
    ```
 4. **Swagger UI**: Visit `http://localhost:8080/swagger-ui.html` for API documentation.
+
+## Frontend Setup
+
+1. **Navigate**: `cd frontend/frontend`
+2. **Install**: `npm install`
+3. **Run**: `npm run dev`
+4. **Access**: Visit `http://localhost:5173`
 
 ## Docker
 
